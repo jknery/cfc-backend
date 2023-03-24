@@ -59,6 +59,21 @@ Adiciona-se arquivo Procfile, contendo:
 com a conta devidamente criada, e adicionados os remotes.
     -- git push heroku master
 
+## Utilização
+
+realidando requisicao POST (CREDITO E DEBITO), com este json:
+{
+  "data": "string",
+  "operador": "string",
+  "valor": 0
+}
+
+REALIZA O CADASTRO DO FLUXOS.
+
+REALIZANDO UM PATCH COM A DATA E OPERADOR, GERA-SE O RELATORIO DO DIA REQUERIDO
+
+REALIZANDO UM GET COM A DATA RECUPERA-SE O CONSOLIDADO DO DIA ESCOLHIDO
+
 ## Constrúido com
 
 * [Maven](https://maven.apache.org/) - Gerenciador de dependências
