@@ -1,0 +1,30 @@
+
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: /cfc-backend/api/v1
+    
+spring:
+  application:
+    name: cfc-backend
+    description: Serviço Stateless - CONTROLE DE FLUXO DE CAIXA E CONSOLIDAÇÕES
+  mvc:
+      pathmatch:
+            matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    url: jdbc:h2:file:./CFC_DB
+    username: carrefour
+    password: carrefour
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+  h2:
+    console:
+      enabled: true
+      path: "/h2-carrefour"
+      settings:
+        web-allow-others: true 
